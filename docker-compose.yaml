@@ -7,10 +7,10 @@ services:
     environment:
       TZ: Asia/Shanghai
       LANG: C.UTF-8
-      MYSQL_ROOT_PASSWORD: AiDeA20231129
+      MYSQL_ROOT_PASSWORD: ${MYSQL_PASSWORD:-AiDeA20231129}
       MYSQL_DATABASE: aidea_server
       MYSQL_USER: aidea
-      MYSQL_PASSWORD: AiDeA20231129
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-AiDeA20231129}
     ports:
       - "3306"
     expose:
@@ -26,7 +26,7 @@ services:
   redis-server:
     image: redis:7.0
     restart: always
-    command: redis-server --save 60 1 --loglevel warning --requirepass AiDeA20231129
+    command: redis-server --save 60 1 --loglevel warning --requirepass ${REDIS_PASSWORD:-AiDeA20231129}
     ports:
       - "6379"
     expose:
