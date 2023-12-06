@@ -26,6 +26,8 @@ https://aidea.aicode.cc
 在启动项目之前，请先根据自己的需要修改 `etc/config.yaml` 文件，该文件为 AIdea 服务端的配置文件。
 
 > 如修改 OpenAI以及各种其它模型服务的 API Keys、邮箱 SMTP 信息、七牛云存储配置、短信、支付配置等，项目依赖参考 [部署指南](https://github.com/mylxsw/aidea-server/blob/main/docs/deploy.md#%E9%A1%B9%E7%9B%AE%E4%BE%9D%E8%B5%96)。
+>
+> 尝鲜只需要修改 `openai-servers` 和 `openai-keys` 即可使用 GPT 模型进行聊天。
 
 运行前请先确保已安装好 Docker 环境和安装有 docker-compose 命令。
 
