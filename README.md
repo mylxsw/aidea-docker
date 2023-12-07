@@ -96,6 +96,13 @@ docker exec -it aidea-docker-mysql-server-1 mysql -uroot -p
 
     参考这里：[AIdea 项目开发环境部署教程（一）前端 Flutter 环境搭建](https://mp.weixin.qq.com/s?__biz=MzA3NTU1NDk4Mg==&mid=2454663555&idx=1&sn=8641dd19b37ef6b9805217a6f10faeda&chksm=88d5584abfa2d15cd08ff790ba9fd5444408f73343b3cceeee93cf91248e660f04bb6fd8d3eb&scene=178&cur_album_id=3204997940193296389#rd)。
 
+- 如何修改端口？
+
+  一般场景下，只有下图中的三处可能涉及到修改，其它位置如果不是很熟悉 Docker 的话，最好不要乱动。
+
+    ![image](https://github.com/mylxsw/aidea-docker/assets/2330911/1e7b2918-2681-4345-a1ea-6c5fefe8847e)
+
+
 ### 技术交流
 
 - 微信技术交流群：3 个群都已满员，添加微信号 `x-prometheus` 为好友，拉你进群
