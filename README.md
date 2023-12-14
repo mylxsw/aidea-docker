@@ -101,6 +101,13 @@ docker exec -it aidea-docker-mysql-server-1 mysql -uroot -p
     将你的 HTTPS 的域名证书文件复制到 `nginx/certs.d` 目录（注意：该目录中已有的证书文件仅供演示使用，请替换为你自己的），然后做如下修改
 
     ![https](./https.jpg)
+    
+- 如何修改端口？
+
+  一般场景下，只有下图中的三处可能涉及到修改，其它位置如果不是很熟悉 Docker 的话，最好不要乱动。
+
+    ![image](https://github.com/mylxsw/aidea-docker/assets/2330911/1e7b2918-2681-4345-a1ea-6c5fefe8847e)
+
 
 ### 技术交流
 
