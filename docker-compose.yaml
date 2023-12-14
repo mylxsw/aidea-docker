@@ -69,10 +69,12 @@ services:
     image: nginx:1.25
     ports:
       - "80:80"
+      #- "443:443"
     networks:
       - aidea-network
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+      #- ./nginx/certs.d:/etc/nginx/certs.d
     depends_on:
       - aidea-server
       - aidea-web

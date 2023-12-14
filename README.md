@@ -96,6 +96,12 @@ docker exec -it aidea-docker-mysql-server-1 mysql -uroot -p
 
     参考这里：[AIdea 项目开发环境部署教程（一）前端 Flutter 环境搭建](https://mp.weixin.qq.com/s?__biz=MzA3NTU1NDk4Mg==&mid=2454663555&idx=1&sn=8641dd19b37ef6b9805217a6f10faeda&chksm=88d5584abfa2d15cd08ff790ba9fd5444408f73343b3cceeee93cf91248e660f04bb6fd8d3eb&scene=178&cur_album_id=3204997940193296389#rd)。
 
+- 如何使用内置的 Nginx 启用 HTTPS？
+
+    将你的 HTTPS 的域名证书文件复制到 `nginx/certs.d` 目录（注意：该目录中已有的证书文件仅供演示使用，请替换为你自己的），然后做如下修改
+
+    ![https](./https.jpg)
+
 ### 技术交流
 
 - 微信技术交流群：3 个群都已满员，添加微信号 `x-prometheus` 为好友，拉你进群

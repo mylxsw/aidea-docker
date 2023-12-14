@@ -1,0 +1,15 @@
+{
+    "hosts": [
+      "demo.aidea.plus"
+    ],
+    "CN": "demo.aidea.plus",
+    "key": {
+        "algo": "rsa",
+        "size": 2048
+    },
+    "names": [
+        {
+            "OU": "AIdea"
+        }
+    ]
+}
