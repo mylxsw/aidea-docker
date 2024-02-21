@@ -86,6 +86,7 @@ docker exec -it aidea-docker-mysql-server-1 mysql -uroot -p
 - 如何升级为最新镜像？
     1. 复制 `.env.example` 文件为 `.env` 文件
     2. 修改 `AIDEA_WEB_IMAGE` 和 `AIDEA_SERVER_IMAGE` 为最新镜像名称
+    3. 执行命令 `docker-compose down` 关闭服务，重新执行 `docker-compose up` 启动，这时候会自动更新为最新版的镜像
 
 - 如何自己打包镜像？
     - 服务端镜像打包参考：[mylxsw/aidea-server:docker-build.sh](https://github.com/mylxsw/aidea-server/blob/main/docker-build.sh)
